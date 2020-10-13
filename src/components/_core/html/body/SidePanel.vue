@@ -9,7 +9,7 @@
                 </Tab>
 
                 <Tab name="Form">
-                    <h1>This is form tab</h1>
+                    <Internal/>
                 </Tab>
             </Tabs>
         </div>
@@ -21,11 +21,18 @@
 import Tabs from "@/components/_core/templates/sections/Tabs";
 import Tab from "@/components/_core/html/_fragments/Tab";
 
+import Internal from "@/components/_core/templates/forms/001/main";
+import Community from "@/components/_core/templates/forms/002/main";
+import Management from "@/components/_core/templates/forms/003/main";
+
 export default {
     name: "SidePanel",
     components: {
         Tabs,
-        Tab
+        Tab,
+        Internal,
+        Community,
+        Management
     }
 }
 </script>

@@ -2,7 +2,7 @@
     <div>
         <div class="Tabs">
             <div class="row bg-info">
-                <div class="col border text-center" v-for="Tab in Tabs" :class="{ 'is-active': Tab.isActive }">
+                <div class="col p-4 border text-center" v-for="Tab in Tabs" :class="{ 'is-active': Tab.isActive }">
                     <a class="text-white" href="javascript:void(0)" @click="selectTab(Tab)">{{ Tab.name }}</a>
                 </div>
             </div>
