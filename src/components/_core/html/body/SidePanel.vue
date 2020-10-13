@@ -3,13 +3,21 @@
         <div class="col-lg-12">
             <Tabs>
                 <Tab name="Templates" :selected="true">
-                    <h1>Template 1</h1>
-                    <h1>Template 2</h1>
-                    <h1>Template 3</h1>
+                    <a class="text-white" href="javascript:void(0)" @click="onSwitch(1)">Internal</a><br>
+                    <a class="text-white" href="javascript:void(0)" @click="onSwitch(2)">Community</a><br>
+                    <a class="text-white" href="javascript:void(0)" @click="onSwitch(3)">Management</a><br>
                 </Tab>
 
                 <Tab name="Form">
-                    <Internal/>
+                    <div v-if="currentTemplate == 1">
+                        <Internal/>
+                    </div>
+                    <div v-else-if="currentTemplate == 2">
+                        <Community/>
+                    </div>
+                    <div v-else>
+                        <Management/>
+                    </div>
                 </Tab>
             </Tabs>
         </div>
@@ -25,6 +33,9 @@ import Internal from "@/components/_core/templates/forms/001/main";
 import Community from "@/components/_core/templates/forms/002/main";
 import Management from "@/components/_core/templates/forms/003/main";
 
+import { SWITCH } from "@/store/types/actions.type";
+import { mapGetters } from "vuex";
+
 export default {
     name: "SidePanel",
     components: {
@@ -33,6 +44,15 @@ export default {
         Internal,
         Community,
         Management
+    },
+    computed: {
+        ...mapGetters(["currentTemplate"])
+    },
+    methods: {
+        onSwitch(template) {
+            this.$store
+            .dispatch(SWITCH, { template })
+        },
     }
 }
 </script>
