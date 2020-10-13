@@ -1,14 +1,18 @@
 <template>
-    <div class="container">
-        <Tabs>
-            <Tab name="Templates" :selected="true">
-                <h1>This is templates tab</h1>
-            </Tab>
+    <div class="row">
+        <div class="col-lg-12">
+            <Tabs>
+                <Tab name="Templates" :selected="true">
+                    <h1>Template 1</h1>
+                    <h1>Template 2</h1>
+                    <h1>Template 3</h1>
+                </Tab>
 
-            <Tab name="Form">
-                <h1>This is form tab</h1>
-            </Tab>
-        </Tabs>
+                <Tab name="Form">
+                    <h1>This is form tab</h1>
+                </Tab>
+            </Tabs>
+        </div>
     </div>
 </template>
 
