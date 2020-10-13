@@ -1,28 +1,19 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col bg-dark-dark">
-                <div class="text-left">
-                    <span>To: <strong>Your Recipient</strong> </span>
-                    <span>Subject: <strong>Check out my new Email Signature</strong></span>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="text-left">
-                    <h1>Juan Dela Cruz</h1><br>
-                    <span>09955554535</span><br>
-                    <span>juan.carlos@rakwireless.com</span><br>
-                    <span>Philippines</span>
-                </div>
-            </div>
-        </div>
-    </div>
+    <Community/>
 </template>
 
 <script>
+
+import Internal from "@/components/_core/templates/previews/001/main";
+import Community from "@/components/_core/templates/previews/002/main";
+import Management from "@/components/_core/templates/previews/003/main";
+
 export default {
-    name: "PreviewPanel"
+    name: "PreviewPanel",
+    components: {
+        Internal,
+        Community,
+        Management
+    }
 }
 </script>
