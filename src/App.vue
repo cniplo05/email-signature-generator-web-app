@@ -1,21 +1,13 @@
 <template>
   <div id="app">
-    <SidePanel/>
     <router-view/>
   </div>
 </template>
 
 <script>
 
-import SidePanel from "@/components/_core/html/body/SidePanel";
-import PreviewPanel from "@/components/_core/html/body/PreviewPanel";
-
 export default {
-  name: 'App',
-  components : {
-    PreviewPanel,
-    SidePanel
-  }
+  name: 'App'
 }
 </script>
 
