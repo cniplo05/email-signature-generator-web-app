@@ -1,14 +1,14 @@
 <template>
     <div>
-        <div class="tabs">
+        <div class="Tabs">
             <ul>
-            <li v-for="tab in tabs" :class="{ 'is-active': tab.isActive }" :key="tab">
-                <a :href="tab.href" @click="selectTab(tab)">{{ tab.name }}</a>
-            </li>
+                <li v-for="Tab in Tabs" :class="{ 'is-active': Tab.isActive }">
+                    <a :href="Tab.href" @click="selectTab(Tab)">{{ Tab.name }}</a>
+                </li>
             </ul>
         </div>
 
-        <div class="tabs-details">
+        <div class="Tabs-details">
             <slot></slot>
         </div>
     </div>
@@ -18,18 +18,18 @@
 export default {
     name: "Tabs",
     data() {
-        return {tabs: [] };
+        return {Tabs: [] };
     },
 
     created() {
 
-        this.tabs = this.$children;
+        this.Tabs = this.$children;
 
     },
     methods: {
         selectTab(selectedTab) {
-            this.tabs.forEach(tab => {
-                tab.isActive = (tab.name == selectedTab.name);
+            this.Tabs.forEach(Tab => {
+                Tab.isActive = (Tab.name == selectedTab.name);
             });
         }
     }

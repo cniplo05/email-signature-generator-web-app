@@ -1,13 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <SidePanel/>
     <router-view/>
   </div>
 </template>
 
 <script>
+
+import SidePanel from "@/components/_core/html/body/SidePanel";
+import PreviewPanel from "@/components/_core/html/body/PreviewPanel";
+
 export default {
-  name: 'App'
+  name: 'App',
+  components : {
+    PreviewPanel,
+    SidePanel
+  }
 }
 </script>
 

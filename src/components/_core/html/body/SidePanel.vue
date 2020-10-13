@@ -1,23 +1,27 @@
 <template>
-    <div id="root" class="container">
-        <tabs>
-            <tab name="Services" :selected="true">
-                <h1>What we do</h1>
-            </tab>
+    <div class="container">
+        <Tabs>
+            <Tab name="Templates" :selected="true">
+                <h1>This is templates tab</h1>
+            </Tab>
 
-            <tab name="Pricing">
-                <h1>How much we do it for</h1>
-            </tab>
-
-            <tab name="About Us">
-                <h1>Why we do it</h1>
-            </tab>
-        </tabs>
+            <Tab name="Form">
+                <h1>This is form tab</h1>
+            </Tab>
+        </Tabs>
     </div>
 </template>
 
 <script>
+
+import Tabs from "@/components/_core/templates/sections/Tabs";
+import Tab from "@/components/_core/html/_fragments/Tab";
+
 export default {
-    name: "SidePanel"
+    name: "SidePanel",
+    components: {
+        Tabs,
+        Tab
+    }
 }
 </script>
