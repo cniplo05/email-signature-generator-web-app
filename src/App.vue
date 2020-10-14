@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container-fluid m-0" style="height: 900px;">
+  <div id="app" class="container-fluid" style="height: 900px;">
     <router-view/>
   </div>
 </template>
@@ -19,5 +19,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body{
+  background-color: aqua !important;
 }
 </style>

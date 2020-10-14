@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="col bg-dark-dark">
+            <div class="col">
                 <div class="text-left">
                     <span>To: <strong>Your Recipient</strong></span><br>
                     <span>Subject: <strong>Check out my new Community Email Signature</strong></span>
@@ -11,7 +11,8 @@
         <div class="row">
             <div class="col">
                 <div class="text-left">
-                    <h1>{{ currentFormData.first_name }} {{ currentFormData.last_name }}</h1><br>
+                    <h3 class="mt-4">{{ currentFormData.first_name }} {{ currentFormData.last_name }}</h3 class="mt-3">
+                    <hr/>
                     <span>{{ currentFormData.contact_number }}</span><br>
                     <span>{{ currentFormData.email}}</span><br>
                     <span>{{ currentFormData.address}}</span>
@@ -33,3 +34,10 @@ export default {
     }
 }
 </script>
+
+<style>
+hr{
+    border: 1px solid #003cc6;
+    border-radius: 5px;
+}
+</style>

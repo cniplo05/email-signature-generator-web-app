@@ -1,10 +1,10 @@
 <template>
     <section>
-        <div class="row bg-secondary">
+        <div class="row bg-white">
             <div class="col-lg-3 bg-dark text-white">
                 <SidePanel/>
             </div>
-            <div class="col-lg-9 text-white align-self-center">
+            <div class="col-lg-9 align-self-center">
                 <PreviewPanel/>
             </div>
         </div>
