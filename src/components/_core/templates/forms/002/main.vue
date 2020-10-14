@@ -12,23 +12,23 @@
                 <form>
                     <div class="form-group">
                         <label for="formGroupFirstName">First Name</label>
-                        <input v-on:keydown="key" type="text" v-model="first_name" name="first_name" class="form-control" id="formGroupFirstName" placeholder="Juan">
+                        <input v-on:keyup="key" type="text" v-model="first_name" name="first_name" class="form-control" id="formGroupFirstName" placeholder="Juan">
                     </div>
                     <div class="form-group">
                         <label for="formGroupLastName">Last Name</label>
-                        <input v-on:keydown="key" type="text" v-model="last_name" class="form-control" id="formGroupLastName" placeholder="Dela Cruz">
+                        <input v-on:keyup="key" type="text" v-model="last_name" class="form-control" id="formGroupLastName" placeholder="Dela Cruz">
                     </div>
                     <div class="form-group">
                         <label for="formGroupEmail">Email</label>
-                        <input v-on:keydown="key" type="text" v-model="email" class="form-control" id="formGroupEmail" placeholder="juandelacruz@example.com">
+                        <input v-on:keyup="key" type="text" v-model="email" class="form-control" id="formGroupEmail" placeholder="juandelacruz@example.com">
                     </div>
                     <div class="form-group">
                         <label for="formGroupContactNumber">Contact Number</label>
-                        <input v-on:keydown="key" type="text" v-model="contact_number" class="form-control" id="formGroupContactNumber" placeholder="+63 995 555 4535">
+                        <input v-on:keyup="key" type="text" v-model="contact_number" class="form-control" id="formGroupContactNumber" placeholder="+63 995 555 4535">
                     </div>
                     <div class="form-group">
                         <label for="formGroupAddress">Address</label>
-                        <input v-on:keydown="key" type="text" v-model="address" class="form-control" id="formGroupAddress" placeholder="Philippines">
+                        <input v-on:keyup="key" type="text" v-model="address" class="form-control" id="formGroupAddress" placeholder="Philippines">
                     </div>
                 </form>
             </div>
