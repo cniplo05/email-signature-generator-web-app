@@ -26,7 +26,7 @@ export default {
         Management
     },
     computed: {
-        ...mapGetters(["currentTemplate"])
+        ...mapGetters(["currentTemplate" ])
     }
 }
 </script>

@@ -1,11 +1,23 @@
 <template>
-    <div class="row">
+    <div class="row align-self-center align-items-center">
         <div class="col-lg-12">
             <Tabs>
                 <Tab name="Templates" :selected="true">
-                    <a class="text-white" href="javascript:void(0)" @click="onSwitch(1)">Internal</a><br>
-                    <a class="text-white" href="javascript:void(0)" @click="onSwitch(2)">Community</a><br>
-                    <a class="text-white" href="javascript:void(0)" @click="onSwitch(3)">Management</a><br>
+                    <div class="row">
+                        <div class="col-12 p-4 border">
+                            <a class="text-white" href="javascript:void(0)" @click="onSwitch(1)">Internal</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 p-4 border">
+                            <a class="text-white" href="javascript:void(0)" @click="onSwitch(2)">Community</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 p-4 border">
+                            <a class="text-white" href="javascript:void(0)" @click="onSwitch(3)">Management</a>
+                        </div>
+                    </div>
                 </Tab>
 
                 <Tab name="Form">

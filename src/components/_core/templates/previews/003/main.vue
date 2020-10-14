@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col bg-dark-dark">
                 <div class="text-left">
-                    <span>To: <strong>Your Recipient</strong> </span>
+                    <span>To: <strong>Your Recipient</strong> </span><br>
                     <span>Subject: <strong>Check out my new Management Email Signature</strong></span>
                 </div>
             </div>
@@ -11,10 +11,10 @@
         <div class="row">
             <div class="col">
                 <div class="text-left">
-                    <h1>Juan Dela Cruz</h1><br>
-                    <span>09955554535</span><br>
-                    <span>juan.carlos@rakwireless.com</span><br>
-                    <span>Philippines</span>
+                    <h1>{{ first_name }} {{ last_name }}</h1><br>
+                    <span>{{ contact_number }}</span><br>
+                    <span>{{ email}}</span><br>
+                    <span>{{ address}}</span>
                 </div>
             </div>
         </div>
