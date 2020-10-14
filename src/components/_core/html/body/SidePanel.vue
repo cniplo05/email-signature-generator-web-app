@@ -26,7 +26,7 @@
 
 <script>
 
-import Tabs from "@/components/_core/templates/sections/Tabs";
+import Tabs from "@/components/_core/templates/sections/001/main";
 import Tab from "@/components/_core/html/_fragments/Tab";
 
 import Internal from "@/components/_core/templates/forms/001/main";
