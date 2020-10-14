@@ -11,10 +11,10 @@
         <div class="row">
             <div class="col">
                 <div class="text-left">
-                    <h1>{{ first_name }} {{ last_name }}</h1><br>
-                    <span>{{ contact_number }}</span><br>
-                    <span>{{ email}}</span><br>
-                    <span>{{ address}}</span>
+                    <h1>{{ currentFormData.first_name }} {{ currentFormData.last_name }}</h1><br>
+                    <span>{{ currentFormData.contact_number }}</span><br>
+                    <span>{{ currentFormData.email}}</span><br>
+                    <span>{{ currentFormData.address}}</span>
                 </div>
             </div>
         </div>
@@ -22,7 +22,14 @@
 </template>
 
 <script>
+
+import { mapGetters } from "vuex";
+
 export default {
-    name: "Internal"
+    name: "Internal",
+
+    computed: {
+        ...mapGetters(["currentFormData"])
+    }
 }
 </script>

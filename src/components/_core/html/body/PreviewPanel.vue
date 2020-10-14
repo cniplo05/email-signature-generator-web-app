@@ -1,5 +1,6 @@
 <template>
-    <div v-if="currentTemplate == 1">
+    <Internal/>
+    <!-- <div v-if="currentTemplate == 1">
         <Internal/>
     </div>
     <div v-else-if="currentTemplate == 2">
@@ -7,7 +8,7 @@
     </div>
     <div v-else>
         <Management/>
-    </div>
+    </div> -->
 </template>
 
 <script>
@@ -26,7 +27,7 @@ export default {
         Management
     },
     computed: {
-        ...mapGetters(["currentTemplate" ])
+        ...mapGetters(["currentTemplate"])
     }
 }
 </script>

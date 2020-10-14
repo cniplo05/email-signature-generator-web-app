@@ -12,23 +12,23 @@
                 <form>
                     <div class="form-group">
                         <label for="formGroupFirstName">First Name</label>
-                        <input type="text" class="form-control" id="formGroupFirstName" placeholder="Juan">
+                        <input v-on:keydown="key" type="text" v-model="first_name" name="first_name" class="form-control" id="formGroupFirstName" placeholder="Juan">
                     </div>
                     <div class="form-group">
                         <label for="formGroupLastName">Last Name</label>
-                        <input type="text" class="form-control" id="formGroupLastName" placeholder="Dela Cruz">
+                        <input v-on:keydown="key" type="text" v-model="last_name" class="form-control" id="formGroupLastName" placeholder="Dela Cruz">
                     </div>
                     <div class="form-group">
                         <label for="formGroupEmail">Email</label>
-                        <input type="text" class="form-control" id="formGroupEmail" placeholder="juandelacruz@example.com">
+                        <input v-on:keydown="key" type="text" v-model="email" class="form-control" id="formGroupEmail" placeholder="juandelacruz@example.com">
                     </div>
                     <div class="form-group">
                         <label for="formGroupContactNumber">Contact Number</label>
-                        <input type="text" class="form-control" id="formGroupContactNumber" placeholder="+63 995 555 4535">
+                        <input v-on:keydown="key" type="text" v-model="contact_number" class="form-control" id="formGroupContactNumber" placeholder="+63 995 555 4535">
                     </div>
                     <div class="form-group">
                         <label for="formGroupAddress">Address</label>
-                        <input type="text" class="form-control" id="formGroupAddress" placeholder="Philippines">
+                        <input v-on:keydown="key" type="text" v-model="address" class="form-control" id="formGroupAddress" placeholder="Philippines">
                     </div>
                 </form>
             </div>
@@ -37,7 +37,26 @@
 </template>
 
 <script>
+
+import { UPDATE_DATA } from "@/store/types/actions.type";
+
 export default {
-    name: "Internal"
+    name: "Internal",
+    data() {
+        return {
+            first_name : '',
+            last_name : '',
+            email : '',
+            contact_number : '',
+            address : ''
+        }
+    },
+
+    methods: {
+        key() {
+            this.$store
+            .dispatch(UPDATE_DATA, { first_name: this.first_name ,last_name: this.last_name, email: this.email, contact_number: this.contact_number, address: this.address })
+        },
+    }
 }
 </script>
