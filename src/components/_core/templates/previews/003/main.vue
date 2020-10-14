@@ -4,7 +4,7 @@
             <div class="col">
                 <div class="text-left">
                     <span>To: <strong>Your Recipient</strong></span><br>
-                    <span>Subject: <strong>Check out my new Management Email Signature</strong></span>
+                    <span>Subject: <strong>Check Out My New Management Email Signature</strong></span>
                 </div>
             </div>
         </div>
